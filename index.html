@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            flex-direction: column;
+            text-align: center;
+        }
+        .nav_item {
+            margin: 0;
+        }
+        .nav_link {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+        }
+        .nav_link:hover {
+            background-color: #cea2ff;
+        }
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            padding: 14px 20px;
+            color: white;
+            background-color: #cea2ff;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .nav__list {
+                display: flex;
+                flex-direction: row;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+
+
+
+        
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
+
+
+
+@media (max-width: 277px) {
+    .header__logo {
+      max-width: 200px;
+    }
+  }
+
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>casamento mariana e david</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+  <header class="header">
+    
+    <img src="teste.jpg" alt="Logo do casamento"
+  
+    class="header__logo"style="max-width: 400px;">
+    <br>
+   
+  </header>
+ 
+
+<script>
+    function toggleMenu() {
+        var navList = document.getElementById('navList');
+        if (navList.style.display === 'block') {
+            navList.style.display = 'none';
+        } else {
+            navList.style.display = 'block';
+        }
+    }
+</script>
+  <section id="sobre" class="section">
+    <h2 class="section__title" style="color: #4982A6;">Sobre Nós</h2>
+    <p>Olá! Somos Mariana e David, e estamos prestes a embarcar na jornada mais emocionante de nossas vidas juntos.</p>
+  </section>
+  <section id="detalhes" class="section">
+    <h2 class="section__title" style="color: #4982A6";>Detalhes do Casamento</h2>
+    <p class="section__content"><strong>Data:</strong> 30/11/2024</p>
+    <p class="section__content"><strong>Horario:</strong>16:40</p>
+    
+    <a href="https://maps.app.goo.gl/3DigrS8Z8TWA2DRc7" style="text-decoration: none; color: inherit;">
+      <p class="section__content"><strong>Local:</strong> Rua José Buzziol, 215, Monte Mor</p>
+  </a>
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1715184231357!2d-47.25660112542321!3d-22.907043679254883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bb07e2501523%3A0x838ae41923df27fb!2sR.%20Jos%C3%A9%20Buzziol%2C%20215%2C%20Monte%20Mor%20-%20SP%2C%2013190-000!5e0!3m2!1spt-BR!2sbr!4v1722188274884!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+
+  </section>
+  <section id="rsvp" class="section">
+    <h2 class="section__title"  style="color: #4982A6";>Presença</h2>
+    <p class="section__content">Por favor, confirme sua presença até 30/09/2024 para que possamos planejar adequadamente.</p>
+     <a href="https://wa.me/5519993014650?text=Olá,%20confirmo%20minha%20presença%20no%20casamento!%20" target="_blank"externo><button id="meuBotao">Clique e confirme!</button></a>
+    
+    <div id="countdown" class="countdown"></div>
+  
+  </section>
+  <section id="presentes" class="section">
+    <h2 class="section__title"  style="color: #4982A6";>Presentes</h2>
+    <p class="section__content">Embora sua presença seja o melhor presente que poderíamos pedir, se você deseja nos presentear, por favor, consulte nossa lista de presentes.</p>
+    <a href="../casamento/abas/desejos.html" class="section__link">Lista de Presentes (clique aqui)</a>
+  </section>
+  <section id="galeria" class="section">
+    <h2 class="section__title"  style="color: #4982A6";>Galeria</h2>
+    <!-- Inserir fotos da galeria --> <img src="mariana e david 01.jpg" alt="fotos" style="max-width: 300px;">
+    <img src="mariana e david 02.jpg"style="max-width: 300px;">
+    <img src="mariana e david 03.jpg" style="max-width: 300px;">
+  </section>
+  
+  
+  <footer class="footer"> 
+    <a href="https://felipe-portofolio.netlify.app/" target="_blank">
+      <p class="footer__text">Este site foi criado com amor por <span class="underline">Felipe Teodoro Ravagnani</span>.</p>
+    </a>
+  </footer>
+
+  <script src="countdown.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
